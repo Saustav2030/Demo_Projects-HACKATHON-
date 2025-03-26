@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+}
+
+.game-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #00ffcc; /* Neon teal */
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+.score-board {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #ffcc00; /* Gold */
+}
+
+#gameCanvas {
+    border: 5px solid #00ffcc; /* Neon teal border */
+    background-color: #0a0a0a; /* Dark background for contrast */
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.5); /* Glow effect */
+}
+
+.controls p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    color: #1f1c2c;
+    background-color: #00ffcc; /* Neon teal */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+#restartButton:hover {
+    background-color: #fff;
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+#restartButton:active {
+    background-color: #aaa;
+}
