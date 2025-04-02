@@ -1,0 +1,77 @@
+/* Performance optimizations for CSS */
+
+/* Reduce box-shadow complexity */
+.product-card {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    will-change: transform;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Optimize transitions */
+.btn, .nav-link, .icon-link, .product-card, .category-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+/* Use hardware acceleration for animated elements */
+.fade-in, .fade-in-left, .fade-in-right, .floating-image {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+}
+
+/* Reduce filter usage */
+.banner::before {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Remove any backdrop-filter if present */
+}
+
+/* Optimize background images */
+.banner, .parallax-section {
+    background-attachment: scroll; /* Instead of fixed */
+}
+
+/* Reduce animation complexity */
+@media (prefers-reduced-motion: no-preference) {
+    .fade-in.active {
+        animation: simpleFadeIn 0.5s ease forwards;
+    }
+    
+    .fade-in-left.active {
+        animation: simpleFadeInLeft 0.5s ease forwards;
+    }
+    
+    .fade-in-right.active {
+        animation: simpleFadeInRight 0.5s ease forwards;
+    }
+    
+    @keyframes simpleFadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes simpleFadeInLeft {
+        from { opacity: 0; transform: translateX(-10px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+    
+    @keyframes simpleFadeInRight {
+        from { opacity: 0; transform: translateX(10px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+}
+
+/* Disable animations completely for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.001s !important;
+        transition-duration: 0.001s !important;
+    }
+    
+    .fade-in, .fade-in-left, .fade-in-right {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
