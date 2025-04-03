@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModernShop | Premium Shopping Experience</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/performance-fixes.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <div class="loader-text">ModernShop</div>
+        </div>
+    </div>
+
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">ModernShop</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#featured" class="nav-link">Featured</a></li>
+                <li><a href="#categories" class="nav-link">Categories</a></li>
+                <li><a href="#trending" class="nav-link">Trending</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" class="icon-link"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="animate-text">Discover Premium Quality</h1>
+                <p class="animate-text delay-1">Explore our collection of high-quality products designed for modern living.</p>
+                <div class="hero-buttons animate-text delay-2">
+                    <a href="#featured" class="btn primary-btn">Shop Now</a>
+                    <a href="#categories" class="btn secondary-btn">Explore</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-image"></div>
+            </div>
+        </section>
+
+        <section id="featured" class="featured">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card" data-tilt>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Premium Watch">
+                        <div class="product-tag">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Watch</h3>
+                        <p class="product-description">Elegant timepiece with premium materials</p>
+                        <div class="product-price">
+                            <span class="current-price">$299</span>
+                            <span class="original-price">$399</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-tilt>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Wireless Headphones">
+                        <div class="product-tag">Best Seller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Wireless Headphones</h3>
+                        <p class="product-description">Immersive sound with noise cancellation</p>
+                        <div class="product-price">
+                            <span class="current-price">$199</span>
+                            <span class="original-price">$249</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-tilt>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f" alt="Sunglasses">
+                        <div class="product-tag">Limited</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Designer Sunglasses</h3>
+                        <p class="product-description">UV protection with stylish design</p>
+                        <div class="product-price">
+                            <span class="current-price">$129</span>
+                            <span class="original-price">$179</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner parallax-section">
+            <div class="banner-content">
+                <h2>Summer Collection</h2>
+                <p>Discover our latest arrivals perfect for the season</p>
+                <a href="#" class="btn primary-btn">View Collection</a>
+            </div>
+        </section>
+
+        <section id="categories" class="categories">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-container">
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b" alt="Fashion">
+                    </div>
+                    <h3>Fashion</h3>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12" alt="Electronics">
+                    </div>
+                    <h3>Electronics</h3>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace" alt="Home Decor">
+                    </div>
+                    <h3>Home Decor</h3>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1470309864661-68328b2cd0a5" alt="Accessories">
+                    </div>
+                    <h3>Accessories</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="trending" class="trending">
+            <h2 class="section-title">Trending Now</h2>
+            <div class="trending-slider">
+                <div class="trending-slide">
+                    <div class="trending-product">
+                        <div class="trending-image">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Sneakers">
+                        </div>
+                        <div class="trending-info">
+                            <h3>Limited Edition Sneakers</h3>
+                            <p>$149</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending-slide">
+                    <div class="trending-product">
+                        <div class="trending-image">
+                            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Camera">
+                        </div>
+                        <div class="trending-info">
+                            <h3>Vintage Camera</h3>
+                            <p>$299</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending-slide">
+                    <div class="trending-product">
+                        <div class="trending-image">
+                            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d" alt="Shoes">
+                        </div>
+                        <div class="trending-info">
+                            <h3>Running Shoes</h3>
+                            <p>$119</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Join Our Newsletter</h2>
+                <p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn primary-btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>ModernShop</h3>
+                <p>Bringing premium products to enhance your lifestyle.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">Collections</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ModernShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/image-optimizer.js"></script>
+    <script src="js/debug-utils.js"></script>
+</body>
+</html>
