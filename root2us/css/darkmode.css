@@ -1,0 +1,46 @@
+.dark-mode {
+    --primary-color: #2ecc71;
+    --secondary-color: #27ae60;
+    --text-color: #e1e1e1;
+    --bg-color: #1a1a1a;
+    --card-bg: #2d2d2d;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .navbar {
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--card-bg);
+}
+
+.dark-mode .hero {
+    background: linear-gradient(rgba(26, 26, 26, 0.9), rgba(26, 26, 26, 0.9)),
+                url('../assets/hero-bg.jpg') center/cover;
+}
+
+.dark-mode .feature-card {
+    background-color: var(--card-bg);
+}
+
+.dark-mode .footer-section a {
+    color: var(--text-color);
+}
+
+.dark-mode .theme-toggle .sun-icon {
+    display: inline-block;
+}
+
+.dark-mode .theme-toggle .moon-icon {
+    display: none;
+}
+
+.light-mode .theme-toggle .sun-icon {
+    display: none;
+}
+
+.light-mode .theme-toggle .moon-icon {
+    display: inline-block;
+}
+
+.dark-mode .loading-screen {
+    background-color: var(--bg-color);
+}

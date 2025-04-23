@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Root2Us</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <style>
+        .about-hero {
+            padding: 8rem 5% 4rem;
+            text-align: center;
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                        url('assets/about-bg.jpg') center/cover;
+        }
+
+        .dark-mode .about-hero {
+            background: linear-gradient(rgba(26, 26, 26, 0.9), rgba(26, 26, 26, 0.9)),
+                        url('assets/about-bg.jpg') center/cover;
+        }
+
+        .values-section {
+            padding: 4rem 10%;
+            background-color: var(--card-bg);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--bg-color);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px var(--shadow-color);
+            transition: var(--transition);
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .value-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-section {
+            padding: 4rem 10%;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background-color: var(--primary-color);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+            width: calc(50% - 2rem);
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: calc(50% + 2rem);
+        }
+
+        .timeline-content {
+            padding: 1.5rem;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        .timeline-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 1rem;
+            }
+
+            .timeline-item {
+                width: calc(100% - 3rem);
+                left: 3rem !important;
+            }
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">Root2Us</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="browse.php">Browse Products</a>
+            <a href="market-trends.php">Market Trends</a>
+            <a href="login.php" class="login-btn">Login</a>
+            <button id="theme-toggle" class="theme-toggle">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="about-hero">
+        <h1 class="animate-fade-in">About Root2Us</h1>
+        <p class="animate-fade-in">Bridging the gap between farmers and consumers, creating a sustainable agricultural ecosystem.</p>
+    </section>
+
+    <section class="values-section">
+        <h2>Our Core Values</h2>
+        <div class="values-grid">
+            <div class="value-card animate-on-scroll">
+                <div class="value-icon">🌟</div>
+                <h3>Transparency</h3>
+                <p>Clear pricing and direct communication between farmers and buyers</p>
+            </div>
+            <div class="value-card animate-on-scroll">
+                <div class="value-icon">💰</div>
+                <h3>Fair Pricing</h3>
+                <p>Better returns for farmers and reasonable prices for consumers</p>
+            </div>
+            <div class="value-card animate-on-scroll">
+                <div class="value-icon">💪</div>
+                <h3>Empowerment</h3>
+                <p>Enabling farmers to take control of their produce pricing</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline-section">
+        <h2>How It Works</h2>
+        <div class="timeline">
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-content">
+                    <h3>Register</h3>
+                    <p>Create an account as a farmer or buyer</p>
+                </div>
+            </div>
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-content">
+                    <h3>List Products</h3>
+                    <p>Farmers can list their produce with details and pricing</p>
+                </div>
+            </div>
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-content">
+                    <h3>Connect</h3>
+                    <p>Buyers browse products and connect with farmers directly</p>
+                </div>
+            </div>
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-content">
+                    <h3>Trade</h3>
+                    <p>Complete transactions and build lasting relationships</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Root2Us</h3>
+                <p>Empowering farmers, connecting communities</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="about.html">About Us</a>
+                <a href="browse.php">Browse Products</a>
+                <a href="market-trends.php">Market Trends</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@root2us.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Root2Us. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/darkmode.js"></script>
+</body>
+</html>
