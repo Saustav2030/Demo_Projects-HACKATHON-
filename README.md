@@ -22,15 +22,17 @@ Problem Statement 7 – Transform the Future of Rural Commerce
 404-Not_Found
 
 ### Team Members:  
-- Saustav Chakraborty (Role: Admin) ([GitHub](https://github.com/Saustav2030) / [LinkedIn](https://www.linkedin.com/in/saustav-chakraborty-26239b211/)  
+- Saustav Chakraborty (Role: Admin) ([GitHub](https://github.com/Saustav2030) / [LinkedIn](https://www.linkedin.com/in/saustav-chakraborty-26239b211/))
 - Nupur Sonowal
 - Mujahid Khan
 
 
 ### Your Approach:  
-- Why you chose this problem  
-- Key challenges you addressed  
-- Any pivots, brainstorms, or breakthroughs during hacking  
+- Why you chose this problem: I wanted my first hackathon project to stand for something impactful. Helping farmers gain visibility and control over their own produce sales was a cause that felt worth building for.
+  
+- Key challenges you addressed: Role-based authentication, admin-controlled listings, and building a user-friendly interface that even non-tech-savvy farmers could navigate—all using pure PHP and MySQL with no frameworks. Also, managing usability while keeping it visually appealing was a big focus.
+ 
+- Any pivots, brainstorms, or breakthroughs during hacking: Initially planned just buyer-seller listing, but later pivoted to include admin moderation to ensure quality and trust. Also brainstormed the day/night mode and loading animations mid-way to make the experience more polished and modern. 
 
 ---
 
