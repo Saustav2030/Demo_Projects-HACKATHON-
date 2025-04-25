@@ -55,8 +55,8 @@ Problem Statement 7 – Transform the Future of Rural Commerce
 
 ## 📽️ Demo & Deliverables
 
-- **Demo Video Link:** [Paste YouTube or Loom link here]  
-- **Pitch Deck / PPT Link:** [Paste Google Slides / PDF link here]  
+- **Demo Video Link:**(https://youtu.be/D0NI4s1l7sM?si=19cEFweutZOkFcyB) 
+- **Pitch Deck / PPT Link:**(https://github.com/Saustav2030/HACKHAZARDS-PROJECT/blob/main/Root2Us-Connecting-Farmers-to-Buyers.pptx)
 
 ---
 
